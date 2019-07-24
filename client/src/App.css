@@ -1,0 +1,18 @@
+#root{
+    position: relative;
+}
+*{
+    box-sizing: border-box;
+}
+.navbar-brand{
+    font-family: 'Rubik Mono One', sans-serif;
+}
+.bg-dark{
+    background: black !important;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
