@@ -25,7 +25,9 @@ import EditProfile from './components/editprofile/EditProfile';
 import AddExperience from './components/addcredentials/AddExperience';
 import AddEducation from './components/addcredentials/AddEducation';
 import PostDetails from './components/post/PostDetails';
+
 if(localStorage.jwttoken){
+  console.log(localStorage.jwttoken);
   setAuthToken(localStorage.jwttoken);
   const decoded = jwt_decode(localStorage.jwttoken);
   store.dispatch(setCurrentUser(decoded));
