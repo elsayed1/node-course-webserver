@@ -22,6 +22,6 @@ const isRegisterValid = user => {
         if(!validator.equals(user.password1, user.password2))
             errors.password2 = "password 2 Must Match";
     }
-    return errors;
+    return isEmpty(errors) ? false:errors;
 }
 module.exports = isRegisterValid;

@@ -30,6 +30,7 @@ export const loginUser = userData => dispatch => {
       });
     })
     .catch(err => {
+      console.log(err.response);
       dispatch({
         type: "GET-ERRORS",
         payload: err.response.data

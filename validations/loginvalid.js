@@ -11,6 +11,6 @@ const isLoginValid = user =>{
     if(isEmpty(user.password)){
         errors.password = "Password filed is required";
     }
-    return errors;
+    return isEmpty(errors) ? false : errors;
 }
 module.exports = isLoginValid;
