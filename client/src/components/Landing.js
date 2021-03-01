@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
+import background from './images/connect.jpeg'
 import './css/landing.css';
 class Landing extends Component{
   render(){
@@ -7,7 +9,7 @@ class Landing extends Component{
       <div className='landing'
       style={{
         height: 'calc( 100vh - (56px + 54px ) )',
-        background: `url(${require('./images/connect.jpeg')}) no-repeat center center`
+        backgroundImage:`url(${background})`
       }}>
         <div 
         className='landing-layout text-center text-white'>
